@@ -14,6 +14,12 @@ RUN apt update && \
         make && \
     apt-get clean
 
-#RUN pip install <libraries>
+RUN pip install gensim \
+    scikit-learn \
+    pytest \
+    PTable \
+    nltk \
+    arpa \
+    morfessor
 
 USER $NB_USER
