@@ -18,7 +18,7 @@ RUN apt update && \
 RUN mkdir /usr/bin/srilm
 WORKDIR /usr/bin/srilm
 RUN wget https://sjtodd.github.io/ling110/srilm-1.7.3.tar.gz && \
-    tar xvf srilm-1.7.3.tar && \
+    tar xvf srilm-1.7.3.tar.gz && \
     sed -i '1i SRILM = /usr/bin/srilm' Makefile && \
     make MAKE_PIC=yes World && \
     make cleanest 
