@@ -35,4 +35,5 @@ USER $NB_USER
 
 # Set environment variables for SRILM
 ENV LC_NUMERIC=C \
-    PATH=$PATH:/usr/bin/srilm/bin:/usr/bin/srilm/i686-m64
+    PATH=$PATH:/usr/bin/srilm/bin:/usr/bin/srilm/bin/i686-m64
+WORKDIR /home/jovyan
